@@ -42,6 +42,7 @@ gem "rails-i18n"
 
 # Frontend templating
 gem "bootstrap", "~> 4.0.0.alpha6"
+gem "simple_form", :github => "elsurudo/simple_form", :branch => "rails-5.1.0"
 gem "slim-rails"
 
 source "https://rails-assets.org" do
