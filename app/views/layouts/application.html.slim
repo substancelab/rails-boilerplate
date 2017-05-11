@@ -1,14 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Folio</title>
-    <%= csrf_meta_tags %>
+doctype html
+html lang="#{I18n.locale}"
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1"
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    title = yield(:page_title)
 
-  <body>
-    <%= yield %>
-  </body>
-</html>
+    = csrf_meta_tags
+    = stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => "reload"
+    = javascript_include_tag "application", "data-turbolinks-track" => "reload"
+
+  body
+    .container-fluid.content
+      section.main-content
+        = yield
+
+    = yield(:append_javascript)
