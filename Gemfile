@@ -42,6 +42,8 @@ group :development, :test do
   gem "capybara", "~> 2.13.0"
   gem "selenium-webdriver"
 
+  gem "dotenv-rails"
+
   gem "factory_girl_rails"
   gem "rspec-rails"
   gem "shoulda-matchers"
@@ -50,8 +52,6 @@ group :development, :test do
 end
 
 group :development do
-  gem "dotenv-rails"
-
   # Access an IRB console on exception pages or by using <%= console %> anywhere
   # in the code.
   gem "listen", ">= 3.0.5", "< 3.2"
