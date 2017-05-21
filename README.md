@@ -1,4 +1,4 @@
-# Falcon Folio
+# Substance Lab Rails Application Boilerplate
 
 ## Initial setup
 
