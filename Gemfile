@@ -18,7 +18,7 @@ gem "puma", "~> 3.7"
 gem "rails-i18n"
 
 # Authentication
-gem "devise", :github => "plataformatec/devise"
+gem "devise"
 
 # Frontend
 gem "bootstrap", "~> 4.0.0.alpha6"
