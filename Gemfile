@@ -23,7 +23,7 @@ gem "devise", :github => "plataformatec/devise"
 # Frontend
 gem "bootstrap", "~> 4.0.0.alpha6"
 gem "sass-rails", "~> 5.0"
-gem "simple_form", :github => "elsurudo/simple_form", :branch => "rails-5.1.0"
+gem "simple_form"
 gem "slim-rails"
 gem "turbolinks", "~> 5"
 
