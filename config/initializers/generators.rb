@@ -5,7 +5,8 @@ Rails.application.config.generators do |g|
   # We'll manually create helpers when we need them (ie rarely)
   g.helper false
 
-  # Don't generate view specs, we tend to not use them
+  # Don't generate specs we tend to not use
+  g.routing_specs false
   g.view_specs false
 
   # Don't generate resource-specific assets
