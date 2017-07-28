@@ -2,8 +2,8 @@
   = f.error_notification
 
   .form-inputs
-<%- attributes.each do |attribute| -%>
-    = f.<%= attribute.reference? ? :association : :input %> :<%= attribute.name %>
+<%- attributes.each.with_index do |attribute, index| -%>
+    = f.<%= attribute.reference? ? :association : :input %> :<%= attribute.name %><% if index == 0 %>, :autofocus => true<% end %>
 <%- end -%>
 
   .form-actions
