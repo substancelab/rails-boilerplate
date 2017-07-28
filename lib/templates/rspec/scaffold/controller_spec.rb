@@ -2,8 +2,13 @@ require "rails_helper"
 
 <% module_namespacing do -%>
 RSpec.describe <%= controller_class_name %>Controller, :type => :controller do
+RSpec.describe <%= controller_class_name %>Controller, :type => :controller do
   let(:valid_attributes) {
+<% if defined?(FactoryGirl) -%>
+    FactoryGirl.attributes_for(:<%= file_name %>)
+<% else -%>
     skip("Add a hash of attributes valid for your model")
+<% end -%>
   }
 
   let(:invalid_attributes) {
