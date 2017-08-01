@@ -6,6 +6,8 @@
 2. `git clone git@github.com:substancelab/rails-boilerplate.git NEW_APP_NAME`
 3. `cd NEW_APP_NAME`
 4. `rm -rf .git`
+5. Replace all occurrences of "Boilerplate" with YourAppName".
+6. Replace all occurrences of "boilerplate" with "your_app_name".
 
 ... and you're off to the races.
 
