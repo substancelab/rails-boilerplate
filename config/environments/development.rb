@@ -66,5 +66,5 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  Slim::Engine.set_default_options :pretty => true
+  Slim::Engine.set_options :pretty => true
 end
