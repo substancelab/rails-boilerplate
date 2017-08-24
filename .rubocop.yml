@@ -4,7 +4,7 @@ AllCops:
     - 'bin/*'
     - 'db/schema.rb'
     - 'lib/templates/**/*.rb'
-    - 'node_modules/**/*.rb'
+    - 'node_modules/*'
 
 Lint/EndAlignment:
   EnforcedStyleAlignWith: variable
