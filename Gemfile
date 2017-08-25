@@ -29,10 +29,6 @@ gem "turbolinks", "~> 5"
 gem "webpacker", "~> 2.0"
 
 # Assets management
-source "https://rails-assets.org" do
-  gem "rails-assets-jquery"
-  gem "rails-assets-tether", ">= 1.3.3"
-end
 gem "uglifier", ">= 1.3.0"
 
 group :development, :test do
