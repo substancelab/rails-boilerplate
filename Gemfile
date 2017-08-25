@@ -26,6 +26,7 @@ gem "sass-rails", "~> 5.0"
 gem "simple_form"
 gem "slim-rails"
 gem "turbolinks", "~> 5"
+gem "webpacker", "~> 2.0"
 
 # Assets management
 source "https://rails-assets.org" do
