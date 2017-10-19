@@ -2,11 +2,6 @@
 
 set -e
 
-# Setup
-cp config/database.yml.example config/database.yml
-bundle
-bin/setup
-
 # Sample usage of the app
 rails generate scaffold Person name --force
 rubocop --auto-correct
@@ -16,7 +11,3 @@ rails db:migrate RAILS_ENV=test
 # Verify
 rubocop --fail-level=A
 rake
-
-# Clean up
-rails destroy scaffold Person name --force
-rails db:drop
