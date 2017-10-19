@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.config.generators do |g|
   # Don't generate the default scaffold stylesheet
   g.scaffold_stylesheet false
