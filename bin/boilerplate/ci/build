@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Sample usage of the app
+rails generate scaffold Person name --force
+rubocop --auto-correct
+rails db:migrate
+rails db:migrate RAILS_ENV=test
+
+# Verify
+rubocop --fail-level=A
+rake
