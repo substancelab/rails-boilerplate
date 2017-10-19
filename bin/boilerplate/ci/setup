@@ -3,6 +3,5 @@
 set -e
 
 # Setup
-cp config/database.yml.example config/database.yml
 bundle
 bin/setup
