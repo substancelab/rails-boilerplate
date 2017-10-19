@@ -1,0 +1,12 @@
+AllCops:
+  Exclude:
+    - !ruby/regexp /.*solano.*\.rb$/
+    - 'Gemfile'
+    - 'bin/*'
+    - 'config/boot.rb'
+    - 'config/initializers/tddium_devise.rb'
+    - 'db/schema.rb'
+    - 'lib/templates/**/*.rb'
+    - 'node_modules/**/*'
+    - 'rgloader/loader.rb'
+    - 'spec/support/tddium*'

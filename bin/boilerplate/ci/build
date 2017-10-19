@@ -2,6 +2,8 @@
 
 set -e
 
+echo "inherit_from: .rubocop_solano.yml" >> .rubocop.yml
+
 # Sample usage of the app
 rails generate scaffold Person name --force
 rubocop --auto-correct
