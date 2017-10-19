@@ -1,4 +1,6 @@
 ---
+hooks:
+  package_setup: bin/boilerplate/ci/setup
 nodejs:
   version: '8.6.0'
 ruby_version: 2.4.1
