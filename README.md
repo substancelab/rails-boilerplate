@@ -26,5 +26,4 @@ Typical next steps:
 ### Set up the application
 
 1. `cp config/database.yml.example config/database.yml` # edit as necessary
-2. `bundle`
-3. `bin/setup`
+2. `bin/setup`
