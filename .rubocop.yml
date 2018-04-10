@@ -14,6 +14,9 @@ Layout/AlignParameters:
 Layout/DotPosition:
   EnforcedStyle: trailing
 
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
 Layout/IndentHash:
   EnforcedStyle: consistent
 
@@ -29,9 +32,6 @@ Layout/SpaceInsideHashLiteralBraces:
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - "spec/**/*"
-
-Lint/EndAlignment:
-  EnforcedStyleAlignWith: variable
 
 Metrics/AbcSize:
   Exclude:
