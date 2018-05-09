@@ -2,6 +2,7 @@ AllCops:
   DisplayCopNames: true
   Exclude:
     - 'bin/*'
+    - 'config/initializers/simple_form_bootstrap.rb'
     - 'db/schema.rb'
     - 'lib/templates/**/*.rb'
     - 'node_modules/**/*'
