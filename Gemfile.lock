@@ -291,7 +291,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  capybara (~> 2.13.0)
+  capybara
   database_cleaner
   devise
   dotenv-rails
@@ -300,10 +300,10 @@ DEPENDENCIES
   guard-livereload
   guard-rspec
   guard-rubocop
-  listen (>= 3.0.5, < 3.2)
+  listen
   postgresql
   puma (~> 3.7)
-  rails (~> 5.1.0)
+  rails
   rails-i18n
   rspec-rails
   rubocop
@@ -313,15 +313,15 @@ DEPENDENCIES
   simple_form
   slim-rails
   spring
-  spring-watcher-listen (~> 2.0.0)
-  turbolinks (~> 5)
+  spring-watcher-listen
+  turbolinks
   tzinfo-data
   uglifier (>= 1.3.0)
-  web-console (>= 3.3.0)
-  webpacker (~> 2.0)
+  web-console
+  webpacker
 
 RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
