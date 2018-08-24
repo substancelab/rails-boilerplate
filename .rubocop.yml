@@ -52,7 +52,10 @@ Metrics/ClassLength:
 
 Metrics/LineLength:
   Exclude:
-    - 'app/dashboards/*'
+    - "app/dashboards/*"
+    - "config/initializers/*"
+    - "config/environments/*"
+    - "config/puma.rb"
 
 Metrics/MethodLength:
   Exclude:

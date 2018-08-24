@@ -11,6 +11,8 @@ end
 
 gem "rails"
 
+gem "bootsnap", :require => false
+
 # Database
 gem "postgresql"
 
