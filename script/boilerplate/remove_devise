@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+git rm -rf app/views/devise
+git rm app/models/user.rb
+git rm config/initializers/devise.rb
+git rm config/locales/devise.en.yml
+git rm db/migrate/20170511143819_devise_create_users.rb
+git rm spec/factories/users.rb
+git rm spec/models/user_spec.rb
+
+git commit -am "Remove Devise"
