@@ -9,7 +9,9 @@
 5. `rm -rf .git .circleci`
 6. Replace all occurrences of "Boilerplate" with YourAppName": `find . -type f -print0 | xargs -0 sed -i '' 's/Boilerplate/YourAppName/g'`
 7. Replace all occurrences of "boilerplate" with "your_app_name": `find . -type f -print0 | xargs -0 sed -i '' 's/boilerplate/your_app_name/g'`
-8. `echo "# README" > README.md`
+8. If you don't need users in the project, remove Devise: `script/boilerplate/remove_devise`
+9. `echo "# README" > README.md`
+10. `rm -rf script/boilerplate`
 
 ... and you're off to the races.
 
