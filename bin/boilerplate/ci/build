@@ -10,4 +10,4 @@ rails db:migrate RAILS_ENV=test
 
 # Verify
 rubocop --fail-level=A
-rake
+bundle exec rake
