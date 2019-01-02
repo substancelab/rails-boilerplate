@@ -3,11 +3,11 @@
 set -e
 
 # Sample usage of the app
-rails generate scaffold Person name --force
-rubocop --auto-correct
-rails db:migrate
-rails db:migrate RAILS_ENV=test
+bundle exec rails generate scaffold Person name --force
+bundle exec rubocop --auto-correct
+bundle exec rails db:migrate
+bundle exec rails db:migrate RAILS_ENV=test
 
 # Verify
-rubocop --fail-level=A
-rake
+bundle exec rubocop --fail-level=A
+bundle exec rake
