@@ -11,3 +11,4 @@ bundle exec rails db:migrate RAILS_ENV=test
 # Verify
 bundle exec rubocop --fail-level=A
 bundle exec rake
+bundle exec rake assets:precompile
