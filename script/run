@@ -1,0 +1,1 @@
+foreman start --env=/dev/null --formation='web=1,worker=1,webpack=1'
