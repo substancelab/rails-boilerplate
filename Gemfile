@@ -48,6 +48,7 @@ group :development, :test do
   gem "shoulda-matchers"
 
   gem "rubocop"
+  gem "rubocop-performance"
 end
 
 group :development do
