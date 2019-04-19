@@ -25,7 +25,6 @@ gem "rails-i18n"
 gem "devise"
 
 # Frontend
-gem "sass-rails"
 gem "simple_form"
 gem "slim-rails"
 gem "turbolinks"
