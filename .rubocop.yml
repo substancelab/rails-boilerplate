@@ -4,7 +4,6 @@ AllCops:
   DisplayCopNames: true
   Exclude:
     - 'bin/*'
-    - 'config/environments/*'
     - 'config/initializers/backtrace_silencers.rb'
     - 'config/initializers/content_security_policy.rb'
     - 'config/initializers/simple_form_bootstrap.rb'
@@ -75,9 +74,6 @@ Naming/FileName:
 
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
-
-Rails/DynamicFindBy:
-  Enabled: false
 
 Style/BlockDelimiters:
   Enabled: false

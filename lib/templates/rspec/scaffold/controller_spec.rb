@@ -21,7 +21,7 @@ RSpec.describe <%= controller_class_name %>Controller, :type => :controller do
     it "returns a success response" do
       <%= class_name %>.create! valid_attributes
       get :index, :params => {}, :session => valid_session
-      expect(response).to be_success
+      expect(response).to be_successful
     end
   end
 
@@ -32,14 +32,14 @@ RSpec.describe <%= controller_class_name %>Controller, :type => :controller do
       get :show,
         :params => {:id => <%= file_name %>.to_param},
         :session => valid_session
-      expect(response).to be_success
+      expect(response).to be_successful
     end
   end
 
   describe "GET #new" do
     it "returns a success response" do
       get :new, :params => {}, :session => valid_session
-      expect(response).to be_success
+      expect(response).to be_successful
     end
   end
 
@@ -49,7 +49,7 @@ RSpec.describe <%= controller_class_name %>Controller, :type => :controller do
       get :edit,
         :params => {:id => <%= file_name %>.to_param},
         :session => valid_session
-      expect(response).to be_success
+      expect(response).to be_successful
     end
   end
 
@@ -76,7 +76,7 @@ RSpec.describe <%= controller_class_name %>Controller, :type => :controller do
         post :create,
           :params => {:<%= ns_file_name %> => invalid_attributes},
           :session => valid_session
-        expect(response).to be_success
+        expect(response).to be_successful
       end
     end
   end
@@ -120,7 +120,7 @@ RSpec.describe <%= controller_class_name %>Controller, :type => :controller do
             :<%= ns_file_name %> => invalid_attributes
           },
           :session => valid_session
-        expect(response).to be_success
+        expect(response).to be_successful
       end
     end
   end
