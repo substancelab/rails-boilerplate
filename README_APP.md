@@ -2,9 +2,9 @@
 
 ## System dependencies
 
-* Ruby 2.5 (see `Gemfile`)
-* PostgreSQL 9.6 (and `libpq-dev` or equivalent)
-* Node 8.x <https://nodejs.org/en/download/package-manager/>
+* Ruby 2.6 (see `Gemfile`)
+* PostgreSQL 11.x (and `libpq-dev` or equivalent)
+* Node 11.x <https://nodejs.org/en/download/package-manager/>
 * Yarn 1.x <https://yarnpkg.com/en/docs/install#linux-tab>
 
 ## Set up the application
