@@ -9,3 +9,6 @@ rm config/locales/devise.en.yml
 rm db/migrate/20170511143819_devise_create_users.rb
 rm spec/factories/users.rb
 rm spec/models/user_spec.rb
+
+# Remove the route added by Devise
+sed -i '' '/devise_for :users/d' config/routes.rb
