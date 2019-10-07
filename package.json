@@ -2,7 +2,7 @@
   "name": "boilerplate",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5",
+    "@rails/webpacker": "^4.0.7",
     "autoprefixer": "^9.6.4",
     "babel-core": "^6.26.3",
     "babel-loader": "7.x",
