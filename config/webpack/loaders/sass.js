@@ -1,18 +1,21 @@
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const { env } = require("../configuration.js");
 
 module.exports = {
-  test: /\.(scss|sass|css)$/i,
-  use: ExtractTextPlugin.extract({
-    fallback: "style-loader",
-    use: [
+  module: {
+    rules: [
       {
-        loader: "css-loader",
-        options: { minimize: env.NODE_ENV === "production", sourceMap: true }
+        test: /\.(scss|sass|css)$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Rewrites URLs to work with Sass
+          'resolve-url-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
       },
-      { loader: "postcss-loader", options: { sourceMap: true } },
-      "resolve-url-loader",
-      { loader: "sass-loader", options: { sourceMap: true } }
-    ]
-  })
+    ],
+  },
 };
