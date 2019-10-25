@@ -26,3 +26,7 @@ config/database.yml
 /public/packs-test
 /yarn-error.log
 yarn-debug.log*
+
+# Environment files
+.env.*.local
+.env.local
