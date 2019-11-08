@@ -332,7 +332,7 @@ DEPENDENCIES
   turbolinks
   tzinfo-data
   uglifier
-  web-console (<= 4.0.1)
+  web-console
   webpacker
 
 RUBY VERSION
