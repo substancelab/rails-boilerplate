@@ -38,26 +38,34 @@ jobs:
 
       - save_cache:
           paths:
-            - ./vendor/bundle
             - ./node_modules
+            - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
 
       # Database setup
       - run:
           name: Setup database
           command: |
-            bin/boilerplate/ci/setup
-          environment:
-            DATABASE_URL: "postgres://ubuntu:@localhost:5432/circle_test"
+            rake db:create
+            rake db:migrate
+            rails db:environment:set RAILS_ENV=test
 
       # run tests!
       - run:
           name: Run tests
           command: |
             mkdir /tmp/test-results
-            bin/boilerplate/ci/build
-          environment:
-            DATABASE_URL: "postgres://ubuntu:@localhost:5432/circle_test"
+            rake
+
+      - run:
+          name: Precompile assets
+          command: |
+            rake assets:precompile
+
+      - run:
+          name: Lint code
+          command: |
+            bundle exec rubocop
 
       # collect reports
       - store_test_results:
