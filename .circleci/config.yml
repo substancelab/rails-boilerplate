@@ -47,8 +47,6 @@ jobs:
           name: Setup database
           command: |
             bin/boilerplate/ci/setup
-          environment:
-            DATABASE_URL: "postgres://ubuntu:@localhost:5432/circle_test"
 
       # run tests!
       - run:
@@ -56,8 +54,6 @@ jobs:
           command: |
             mkdir /tmp/test-results
             bin/boilerplate/ci/build
-          environment:
-            DATABASE_URL: "postgres://ubuntu:@localhost:5432/circle_test"
 
       # collect reports
       - store_test_results:
