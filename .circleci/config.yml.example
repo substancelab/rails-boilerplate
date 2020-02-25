@@ -16,6 +16,7 @@ jobs:
       - image: circleci/postgres:latest-ram
         environment:
         - POSTGRES_USER=ubuntu
+        - POSTGRES_PASSWORD=totallysecret
     working_directory: ~/repo
 
     steps:
