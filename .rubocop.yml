@@ -27,6 +27,12 @@ Layout/FirstArrayElementIndentation:
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
+Layout/LineLength:
+  Exclude:
+    - 'app/dashboards/*'
+    - 'config/initializers/*'
+    - 'db/migrate/*'
+
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
@@ -59,12 +65,6 @@ Metrics/ClassLength:
   Exclude:
     - 'app/dashboards/*'
 
-Metrics/LineLength:
-  Exclude:
-    - 'app/dashboards/*'
-    - 'config/initializers/*'
-    - 'db/migrate/*'
-
 Metrics/MethodLength:
   Exclude:
     - 'db/migrate/*'
@@ -81,8 +81,17 @@ Style/BlockDelimiters:
 Style/Documentation:
   Enabled: false
 
+Style/HashEachMethods:
+  Enabled: true
+
 Style/HashSyntax:
   EnforcedStyle: hash_rockets
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
 
 Style/IfUnlessModifier:
   Enabled: false
