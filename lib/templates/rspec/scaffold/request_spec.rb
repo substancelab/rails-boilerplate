@@ -78,7 +78,7 @@ RSpec.describe "/<%= name.underscore.pluralize %>", <%= type_metatag(:request) %
         }.to change(<%= class_name %>, :count).by(0)
       end
 
-      it "renders a successful response (i.e. to display the 'new' template)" do
+      it "renders the 'new' template" do
         post <%= index_helper %>_url, params: { <%= ns_file_name %>: invalid_attributes }
         expect(response).to be_successful
       end
@@ -107,7 +107,7 @@ RSpec.describe "/<%= name.underscore.pluralize %>", <%= type_metatag(:request) %
     end
 
     context "with invalid parameters" do
-      it "renders a successful response (i.e. to display the 'edit' template)" do
+      it "renders the 'edit' template" do
         <%= file_name %> = <%= class_name %>.create! valid_attributes
         patch <%= show_helper.tr('@', '') %>, params: { <%= singular_table_name %>: invalid_attributes }
         expect(response).to be_successful
