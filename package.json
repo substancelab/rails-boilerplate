@@ -30,6 +30,6 @@
     "webpack-dev-server": "^3.8.2"
   },
   "devDependencies": {
-    "prettier": "2.0.4"
+    "prettier": "2.0.5"
   }
 }
