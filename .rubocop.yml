@@ -15,8 +15,12 @@ AllCops:
     - 'vendor/**/*'
   TargetRubyVersion: 2.6
 
+
 Layout/DotPosition:
   EnforcedStyle: trailing
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
 
 Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
@@ -42,12 +46,21 @@ Layout/MultilineOperationIndentation:
 Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
 
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
 
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - 'spec/**/*'
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
 
 Metrics/AbcSize:
   Exclude:
@@ -81,6 +94,9 @@ Style/BlockDelimiters:
 Style/Documentation:
   Enabled: false
 
+Style/ExponentialNotation:
+  Enabled: true
+
 Style/HashEachMethods:
   Enabled: true
 
@@ -98,6 +114,9 @@ Style/IfUnlessModifier:
 
 Style/SafeNavigation:
   Enabled: false
+
+Style/SlicingWithRange:
+  Enabled: true
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
