@@ -15,7 +15,6 @@ AllCops:
     - 'vendor/**/*'
   TargetRubyVersion: 2.6
 
-
 Layout/DotPosition:
   EnforcedStyle: trailing
 
@@ -55,6 +54,9 @@ Layout/SpaceInsideHashLiteralBraces:
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - 'spec/**/*'
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
 
 Lint/RaiseException:
   Enabled: true
