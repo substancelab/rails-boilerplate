@@ -11,7 +11,7 @@
     "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
     "bootstrap": ">=4.5.0",
-    "coffee-loader": "^0.9.0",
+    "coffee-loader": "^1.0.0",
     "coffee-script": "^1.12.7",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
