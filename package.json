@@ -13,7 +13,7 @@
     "bootstrap": ">=4.5.0",
     "coffee-loader": "^1.0.0",
     "coffee-script": "^1.12.7",
-    "css-loader": "^3.5.3",
+    "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "glob": "^7.1.4",
     "js-yaml": "^3.14.0",
