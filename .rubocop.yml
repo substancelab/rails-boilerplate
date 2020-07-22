@@ -50,9 +50,6 @@ Lint/AmbiguousBlockAssociation:
   Exclude:
     - 'spec/**/*'
 
-Lint/DeprecatedOpenSSLConstant:
-  Enabled: true
-
 Metrics/AbcSize:
   Exclude:
     - 'db/migrate/*'
@@ -84,9 +81,6 @@ Style/BlockDelimiters:
 
 Style/Documentation:
   Enabled: false
-
-Style/HashEachMethods:
-  Enabled: true
 
 Style/HashSyntax:
   EnforcedStyle: hash_rockets
