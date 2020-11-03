@@ -1,5 +1,3 @@
-const { env } = require("../configuration.js");
-
 module.exports = {
   module: {
     rules: [
@@ -13,9 +11,9 @@ module.exports = {
           // Rewrites URLs to work with Sass
           'resolve-url-loader',
           // Compiles Sass to CSS
-          'sass-loader',
-        ],
-      },
-    ],
-  },
-};
+          'sass-loader'
+        ]
+      }
+    ]
+  }
+}
