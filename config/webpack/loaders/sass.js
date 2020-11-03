@@ -1,5 +1,3 @@
-const { env } = require('../configuration.js')
-
 module.exports = {
   module: {
     rules: [
