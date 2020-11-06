@@ -14,7 +14,7 @@
     "coffee-loader": "^1.0.1",
     "coffee-script": "^1.12.7",
     "css-loader": "^5.0.0",
-    "file-loader": "^6.1.1",
+    "file-loader": "^6.2.0",
     "glob": "^7.1.4",
     "js-yaml": "^3.14.0",
     "mini-css-extract-plugin": "^1.2.1",
