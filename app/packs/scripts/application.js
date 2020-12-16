@@ -9,5 +9,5 @@
 
 // Make Rails standard helpers (ie data-confirm, data-remote etc) work as
 // expected
-import Rails from 'rails-ujs'
+import Rails from '@rails/ujs'
 Rails.start()
