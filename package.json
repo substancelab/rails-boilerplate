@@ -27,7 +27,7 @@
     "precss": "^4.0.0",
     "resolve-url-loader": "^3.1.2",
     "sass-loader": "^10.0.3",
-    "standard": "^16.0.1",
+    "standard": "^16.0.3",
     "style-loader": "^2.0.0",
     "webpack-dev-server": "^4.2.0"
   },
