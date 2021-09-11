@@ -9,15 +9,15 @@ function hotfixPostcssLoaderConfig (subloader) {
         'Remove postcssOptions workaround in config/webpack/environment.js'
       )
     } else {
-      subloader.options.postcssOptions = subloader.options.config;
-      delete subloader.options.config;
+      subloader.options.postcssOptions = subloader.options.config
+      delete subloader.options.config
     }
   }
 }
 
 environment.loaders.keys().forEach(loaderName => {
-  const loader = environment.loaders.get(loaderName);
-  loader.use.forEach(hotfixPostcssLoaderConfig);
-});
+  const loader = environment.loaders.get(loaderName)
+  loader.use.forEach(hotfixPostcssLoaderConfig)
+})
 
 module.exports = environment
