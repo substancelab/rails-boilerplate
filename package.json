@@ -11,7 +11,7 @@
     "@rails/ujs": "^6.1.4",
     "@rails/webpacker": "^5.4.2",
     "autoprefixer": "^10.0.1",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^8.2.2",
     "coffee-loader": "^1.0.1",
     "coffee-script": "^1.12.7",
     "css-loader": "^5.0.0",
