@@ -58,7 +58,7 @@ class <%= controller_class_name %>Controller < ApplicationController
     <%= orm_class.find(class_name, "params[:id]") %>
   end
 
-  # Only allow a trusted parameter "white list" through.
+  # Only allow trusted parameters through.
   def <%= "#{singular_table_name}_params" %>
     <%- if attributes_names.empty? -%>
     params.fetch(:<%= singular_table_name %>, {})
