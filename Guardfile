@@ -19,7 +19,6 @@
 
 guard "livereload" do
   extensions = {
-    :coffee => :js,
     :html => :html,
     :png => :png,
     :gif => :gif,
