@@ -340,7 +340,7 @@ DEPENDENCIES
   listen
   postgresql
   puma
-  rails
+  rails (< 7.0)
   rails-i18n
   rspec-rails (>= 4.0.0.beta2)
   rubocop
