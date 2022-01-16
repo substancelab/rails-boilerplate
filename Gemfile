@@ -30,6 +30,9 @@ gem "slim-rails"
 gem "turbolinks"
 gem "webpacker", "6.0.0.rc6"
 
+# Integrations
+gem "net-smtp"
+
 # Assets management
 gem "uglifier"
 
