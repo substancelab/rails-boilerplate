@@ -29,7 +29,7 @@
     "sass-loader": "^12.4.0",
     "standard": "^16.0.4",
     "style-loader": "^3.3.1",
-    "webpack-dev-server": "^4.2.0"
+    "webpack-dev-server": "^4.7.3"
   },
   "devDependencies": {
     "prettier": "2.3.2"
