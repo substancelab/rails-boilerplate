@@ -60,10 +60,10 @@ group :development do
   gem "web-console"
 
   # Run stuff automatically
-  gem "guard"
-  gem "guard-livereload"
-  gem "guard-rspec"
-  gem "guard-rubocop"
+  gem "guard", :require => false
+  gem "guard-livereload", :require => false
+  gem "guard-rspec", :require => false
+  gem "guard-rubocop", :require => false
 
   # Spring speeds up development by keeping your application running in the
   # background. Read more: https://github.com/rails/spring
