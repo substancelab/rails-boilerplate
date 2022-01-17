@@ -1,19 +1,17 @@
-# Ruby CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-ruby/ for more details
-#
-version: 2
+version: 2.1
+orbs:
+  node: circleci/node@5.0.0
 jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/ruby:2.7.0-node
+      - image: cimg/ruby:3.1.0-node
         environment:
         - DATABASE_URL=postgres://ubuntu:@localhost:5432/circle_test
 
       # Specify service dependencies here if necessary
       # https://circleci.com/docs/2.0/docker-image-tags.json
-      - image: circleci/postgres:latest-ram
+      - image: cimg/postgres:13.5
         environment:
         - POSTGRES_USER=ubuntu
         - POSTGRES_PASSWORD=totallysecret
@@ -22,21 +20,16 @@ jobs:
     steps:
       - checkout
 
-      - run:
-          name: "Install specified version of Node.js and npm"
-          command: |
-            export WANTED_NODE_VERSION=`grep nodejs .tool-versions | cut -d " " -f 2`
-            echo $WANTED_NODE_VERSION
-            curl -sSL "https://nodejs.org/dist/v${WANTED_NODE_VERSION}/node-v${WANTED_NODE_VERSION}-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v${WANTED_NODE_VERSION}-linux-x64/bin/node
-            curl https://www.npmjs.com/install.sh | sudo bash
-            node -v
+      - node/install:
+          install-yarn: true
+          node-version: '16.13'
 
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+          - v2-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
           # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+          - v2-dependencies-
 
       - run:
           name: Install dependencies
@@ -49,17 +42,15 @@ jobs:
 
       - save_cache:
           paths:
-            - ./node_modules
             - ./vendor/bundle
-          key: v1-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+            - ./node_modules
+          key: v2-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
 
       # Database setup
       - run:
           name: Setup database
           command: |
-            bundle exec rake db:create
-            bundle exec rake db:migrate
-            bundle exec rails db:environment:set RAILS_ENV=test
+            bundle exec rails db:schema:load
 
       # run tests!
       - run:
