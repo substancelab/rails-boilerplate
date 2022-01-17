@@ -2,14 +2,14 @@
 
 source "https://rubygems.org"
 
-ruby "3.0.3"
+ruby "3.1.0"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
 
-gem "rails"
+gem "rails", "< 7.0"
 
 gem "bootsnap", ">= 1.4.2", :require => false
 
@@ -29,6 +29,9 @@ gem "simple_form"
 gem "slim-rails"
 gem "turbolinks"
 gem "webpacker", "6.0.0.rc6"
+
+# Integrations
+gem "net-smtp"
 
 # Assets management
 gem "uglifier"
