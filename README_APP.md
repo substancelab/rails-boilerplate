@@ -23,6 +23,7 @@ The following environment variables are expected to be configured by the environ
 * `RAILS_MASTER_KEY`: Used to encrypt secrets in `config/secrets.yml.enc`.
 * `RAILS_MAX_THREADS`: How many threads to run per process (defaults to `5`).
 * `RAILS_SERVE_STATIC_FILES`: Set this to let Rails/Puma serve static files. Usually nginx or Apache fronting the application handles this, but if you're only running an application server like Puma, this needs to be set (to any value).
+* `SECRET_KEY_BASE`: Input secret to the application’s key generator, which in turn is used to create all MessageVerifiers/MessageEncryptors, including the ones that sign and encrypt cookies.
 * `SMTP_ADDRESS`: Address/hostname of the server to send emails via.
 * `SMTP_PASSWORD`: Password for sending emails.
 * `SMTP_USERNAME`: Username for sending emails.
