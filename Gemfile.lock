@@ -157,6 +157,10 @@ GEM
     msgpack (1.4.2)
     multi_json (1.13.1)
     nenv (0.3.0)
+    net-pop (0.1.1)
+      digest
+      net-protocol
+      timeout
     net-protocol (0.1.2)
       io-wait
       timeout
@@ -348,6 +352,7 @@ DEPENDENCIES
   guard-rspec
   guard-rubocop
   listen
+  net-pop
   net-smtp
   postgresql
   puma
