@@ -6,14 +6,13 @@ version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
-      - image: circleci/ruby:2.7.0-node
+      # https://circleci.com/developer/images/image/cimg/ruby
+      - image: cimg/ruby:3.1.2-node
         environment:
         - DATABASE_URL=postgres://ubuntu:@localhost:5432/circle_test
 
-      # Specify service dependencies here if necessary
-      # https://circleci.com/docs/2.0/docker-image-tags.json
-      - image: circleci/postgres:latest-ram
+      # https://circleci.com/developer/images/image/cimg/postgres
+      - image: cimg/postgres:14.2
         environment:
         - POSTGRES_USER=ubuntu
         - POSTGRES_PASSWORD=totallysecret
