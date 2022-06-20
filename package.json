@@ -43,7 +43,7 @@
     "defaults"
   ],
   "devDependencies": {
-    "@webpack-cli/serve": "^1.6.1",
+    "@webpack-cli/serve": "^1.7.0",
     "prettier": "2.6.2",
     "webpack-dev-server": "^4.9.2"
   }
