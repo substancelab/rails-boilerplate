@@ -4,7 +4,7 @@ set -e
 
 # Sample usage of the app
 bundle exec rails generate scaffold Person name --force
-bundle exec rubocop --auto-correct-all
+bundle exec rubocop --autocorrect-all
 bundle exec rails db:migrate
 bundle exec rails db:migrate RAILS_ENV=test
 

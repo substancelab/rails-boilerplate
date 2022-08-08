@@ -136,12 +136,12 @@ Rails.application.configure do
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
       :address => ENV["SMTP_ADDRESS"],
-      :user_name => ENV["SMTP_USERNAME"],
-      :password => ENV["SMTP_PASSWORD"],
+      :user_name => ENV.fetch("SMTP_USERNAME", nil),
+      :password => ENV.fetch("SMTP_PASSWORD", nil),
     }
   end
 
   config.action_mailer.default_url_options = {
-    :host => ENV["DOMAIN"],
+    :host => ENV.fetch("DOMAIN", nil),
   }
 end
