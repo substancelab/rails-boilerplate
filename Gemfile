@@ -36,6 +36,7 @@ gem "net-pop"
 gem "net-smtp"
 
 # Assets management
+gem "sprockets-rails"
 gem "uglifier"
 
 group :development, :test do
