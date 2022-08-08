@@ -23,7 +23,7 @@ Typical next steps:
 2. `git remote add origin GIT_REMOTE`
 3. `git add .`
 4. `git commit -m "Initial import from rails-boilerplate"`
-5. `git push --set-upstream origin master`
+5. `git push --set-upstream origin main`
 
 ### Set up the application
 
