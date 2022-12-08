@@ -20,7 +20,7 @@
     "path-complete-extname": "^1.0.0",
     "postcss": "^8.4.19",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-import": "^15.0.0",
+    "postcss-import": "^15.0.1",
     "postcss-loader": "^7.0.2",
     "postcss-smart-import": "^0.7.6",
     "precss": "^4.0.0",
