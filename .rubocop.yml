@@ -1,6 +1,7 @@
 require:
   - 'rubocop-performance'
   - 'rubocop-rails'
+  - 'rubocop-rspec'
 
 AllCops:
   DisplayCopNames: true
@@ -77,6 +78,12 @@ Naming/FileName:
 
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
+
+RSpec/FactoryBot/SyntaxMethods:
+  Enabled: false
+
+RSpec/Rails/InferredSpecType:
+  Enabled: false
 
 Style/BlockDelimiters:
   Enabled: false
