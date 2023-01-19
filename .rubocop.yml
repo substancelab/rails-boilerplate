@@ -92,6 +92,9 @@ Rails/ActionOrder:
     - show
     - update
 
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
 RSpec/Rails/InferredSpecType:
   Enabled: false
 
