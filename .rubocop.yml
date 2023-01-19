@@ -95,6 +95,9 @@ Rails/ActionOrder:
 Rails/HasAndBelongsToMany:
   Enabled: false
 
+Rails/ShortI18n:
+  Enabled: false
+
 RSpec/Rails/InferredSpecType:
   Enabled: false
 
