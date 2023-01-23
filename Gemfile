@@ -27,7 +27,7 @@ gem "devise"
 # Frontend
 gem "simple_form"
 gem "slim-rails"
-gem "turbolinks"
+gem "turbo-rails"
 gem "webpacker", "6.0.0.rc6"
 
 # Integrations
