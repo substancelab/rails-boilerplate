@@ -16,7 +16,7 @@
     "file-loader": "^6.2.0",
     "glob": "^9.3.2",
     "js-yaml": "^4.1.0",
-    "mini-css-extract-plugin": "2.7.3",
+    "mini-css-extract-plugin": "2.7.5",
     "path-complete-extname": "^1.0.0",
     "postcss": "^8.4.21",
     "postcss-flexbugs-fixes": "^5.0.2",
