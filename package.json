@@ -21,7 +21,7 @@
     "postcss": "^8.4.21",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^15.1.0",
-    "postcss-loader": "^7.1.0",
+    "postcss-loader": "^7.2.4",
     "postcss-smart-import": "^0.7.6",
     "precss": "^4.0.0",
     "resolve-url-loader": "^5.0.0",
