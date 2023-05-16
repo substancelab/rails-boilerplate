@@ -19,6 +19,9 @@ AllCops:
   NewCops: enable
   TargetRubyVersion: 3.0
 
+FactoryBot/SyntaxMethods:
+  Enabled: false
+
 Layout/DotPosition:
   EnforcedStyle: trailing
 
@@ -78,9 +81,6 @@ Naming/FileName:
 
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
-
-RSpec/FactoryBot/SyntaxMethods:
-  Enabled: false
 
 RSpec/Rails/InferredSpecType:
   Enabled: false
