@@ -21,6 +21,13 @@ jobs:
     steps:
       - checkout
 
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v2-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+          # fallback to using the latest cache if no exact match is found
+          - v2-dependencies-
+
       - run:
           name: "Install specified version of Node.js and npm"
           command: |
@@ -29,13 +36,6 @@ jobs:
             curl -sSL "https://nodejs.org/dist/v${WANTED_NODE_VERSION}/node-v${WANTED_NODE_VERSION}-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v${WANTED_NODE_VERSION}-linux-x64/bin/node
             curl https://www.npmjs.com/install.sh | sudo bash
             node -v
-
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v2-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
-          # fallback to using the latest cache if no exact match is found
-          - v2-dependencies-
 
       - run:
           name: Install dependencies
