@@ -7,7 +7,7 @@ class <%= controller_class_name %>Controller < ApplicationController
     @<%= singular_table_name %> = <%= orm_class.build(class_name, "#{singular_table_name}_params") %>
 
     if @<%= orm_instance.save %>
-      flash[:success] = <%= "\"#{human_name} was successfully created.\"" %>
+      flash[:success] = I18n.translate(".success")
       redirect_to @<%= singular_table_name %>
     else
       render :new
@@ -18,7 +18,7 @@ class <%= controller_class_name %>Controller < ApplicationController
   def destroy
     @<%= singular_table_name %> = find_<%= singular_table_name %>
     @<%= orm_instance.destroy %>
-    flash[:success] = <%= "\"#{human_name} was successfully destroyed.\"" %>
+    flash[:success] = I18n.translate(".success")
     redirect_to <%= index_helper %>_url
   end
 
@@ -47,7 +47,7 @@ class <%= controller_class_name %>Controller < ApplicationController
     @<%= singular_table_name %> = find_<%= singular_table_name %>
 
     if @<%= orm_instance.update("#{singular_table_name}_params") %>
-      flash[:success] = <%= "\"#{human_name} was successfully updated.\"" %>
+      flash[:success] = I18n.translate(".success")
       redirect_to @<%= singular_table_name %>
     else
       render :edit
