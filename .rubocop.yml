@@ -1,4 +1,7 @@
-require: 'rubocop-performance'
+require:
+  - 'rubocop-performance'
+  - 'rubocop-rails'
+  - 'rubocop-rspec'
 
 AllCops:
   DisplayCopNames: true
@@ -15,6 +18,9 @@ AllCops:
     - 'vendor/**/*'
   NewCops: enable
   TargetRubyVersion: 3.0
+
+FactoryBot/SyntaxMethods:
+  Enabled: false
 
 Layout/DotPosition:
   EnforcedStyle: trailing
@@ -75,6 +81,9 @@ Naming/FileName:
 
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
+
+RSpec/Rails/InferredSpecType:
+  Enabled: false
 
 Style/BlockDelimiters:
   Enabled: false
