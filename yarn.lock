@@ -2414,10 +2414,10 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@rails/ujs@^7.0.4":
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.4.tgz#7fe5387d2d82b0547fdfc6667b424ec119c86b1e"
-  integrity sha512-UY9yQxBvtqXzXScslgPwZoQd16T0+z3P6BQS4lZDJFg5xVuMIgHkHQI6dhyWEt5l/qwbGaYX+YiZu6J+oxWPOw==
+"@rails/ujs@^7.0.5":
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.5.tgz#d35a71fe6ecd4ab88bbe4bc6c2f287c992c2de4c"
+  integrity sha512-/wQ6v4DGxhxflPWoLwGkOQoKbtIXx/LsVNKd8shRM+/HXxlVBEb+F5znN99TlxX8e/R3dN6anTPAqA+mfA5YtQ==
 
 "@rails/webpacker@^6.0.0-rc.6":
   version "6.0.0-rc.6"
