@@ -25,7 +25,7 @@
     "postcss-smart-import": "^0.7.6",
     "precss": "^4.0.0",
     "resolve-url-loader": "^5.0.0",
-    "standard": "^17.0.0",
+    "standard": "^17.1.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.76.0",
     "webpack-cli": "^5.1.1"
