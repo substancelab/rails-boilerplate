@@ -82,6 +82,22 @@ Naming/FileName:
 Naming/RescuedExceptionsVariableName:
   PreferredName: error
 
+Rails/ActionOrder:
+  ExpectedOrder:
+    - create
+    - destroy
+    - edit
+    - index
+    - new
+    - show
+    - update
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/ShortI18n:
+  Enabled: false
+
 RSpec/Rails/InferredSpecType:
   Enabled: false
 
