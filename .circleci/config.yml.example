@@ -2,7 +2,11 @@
 #
 # Check https://circleci.com/docs/2.0/language-ruby/ for more details
 #
-version: 2
+version: 2.1
+
+orbs:
+  node: circleci/node@5.1.0
+
 jobs:
   build:
     docker:
@@ -22,13 +26,12 @@ jobs:
       - checkout
 
       - run:
-          name: "Install specified version of Node.js and npm"
+          name: "Configure Node version"
           command: |
-            export WANTED_NODE_VERSION=`grep nodejs .tool-versions | cut -d " " -f 2`
-            echo $WANTED_NODE_VERSION
-            curl -sSL "https://nodejs.org/dist/v${WANTED_NODE_VERSION}/node-v${WANTED_NODE_VERSION}-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v${WANTED_NODE_VERSION}-linux-x64/bin/node
-            curl https://www.npmjs.com/install.sh | sudo bash
-            node -v
+            grep nodejs .tool-versions | cut -d " " -f 2 > .nvmrc
+
+      - node/install:
+          install-yarn: true
 
       # Download and cache dependencies
       - restore_cache:
