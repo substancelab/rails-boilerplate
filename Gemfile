@@ -9,7 +9,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem "rails", "<= 7.0.5.1"
+gem "rails", "<= 7.0.6"
 
 gem "bootsnap", ">= 1.4.2", :require => false
 
