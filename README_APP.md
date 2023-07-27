@@ -28,3 +28,5 @@ The following environment variables are expected to be configured by the environ
 * `SMTP_ADDRESS`: Address/hostname of the server to send emails via.
 * `SMTP_PASSWORD`: Password for sending emails.
 * `SMTP_USERNAME`: Username for sending emails.
+
+All of these can be configured locally and in different environments using `.env`-files, see [dotenv](https://github.com/bkeepers/dotenv) for details.
