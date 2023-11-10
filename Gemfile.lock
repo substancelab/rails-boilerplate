@@ -160,6 +160,8 @@ GEM
     irb (1.8.3)
       rdoc
       reline (>= 0.3.8)
+    jsbundling-rails (1.2.1)
+      railties (>= 6.0.0)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
     listen (3.8.0)
@@ -400,6 +402,7 @@ DEPENDENCIES
   guard-livereload
   guard-rspec
   guard-rubocop
+  jsbundling-rails (~> 1.2)
   listen
   net-imap
   net-pop
