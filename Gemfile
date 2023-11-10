@@ -30,7 +30,6 @@ gem "jsbundling-rails", "~> 1.2"
 gem "simple_form"
 gem "slim-rails"
 gem "turbo-rails"
-gem "webpacker", "6.0.0.rc6"
 
 # Integrations
 gem "net-imap"
