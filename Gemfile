@@ -25,6 +25,7 @@ gem "rails-i18n"
 gem "devise"
 
 # Frontend
+gem "cssbundling-rails"
 gem "jsbundling-rails", "~> 1.2"
 gem "simple_form"
 gem "slim-rails"
