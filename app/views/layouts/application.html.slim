@@ -9,7 +9,7 @@ html lang="#{I18n.locale}"
 
     = csrf_meta_tags
     = stylesheet_pack_tag "application"
-    = javascript_pack_tag "application"
+    = javascript_include_tag "application", :defer => true
 
   body
     .container-fluid.content

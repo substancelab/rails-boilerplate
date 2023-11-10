@@ -1,7 +1,7 @@
 
 if [ -x "$(command -v procodile)" ]; then
-  procodile start --dev --processes="web,worker,webpack"
+  procodile start --procfile=Procfile.dev --dev
 fi
 if [ -x "$(command -v foreman)" ]; then
-  foreman start --env=/dev/null --formation='web=1,worker=1,webpack=1'
+  foreman start --env=/dev/null --procfile=Procfile.dev
 fi
