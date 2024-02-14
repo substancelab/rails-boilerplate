@@ -9,7 +9,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "prettier": "3.2.4"
+    "prettier": "3.2.5"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=/assets",
