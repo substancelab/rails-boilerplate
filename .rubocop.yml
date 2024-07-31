@@ -19,8 +19,8 @@ AllCops:
   NewCops: enable
   TargetRubyVersion: 3.0
 
-FactoryBot/SyntaxMethods:
-  Enabled: false
+Bundler/OrderedGems:
+  ConsiderPunctuation: true
 
 Layout/DotPosition:
   EnforcedStyle: trailing
@@ -76,6 +76,10 @@ Metrics/MethodLength:
   Exclude:
     - 'db/migrate/*'
 
+Metrics/ModuleLength:
+  Exclude:
+    - 'spec/**/*'
+
 Naming/FileName:
   Enabled: false
 
@@ -98,7 +102,13 @@ Rails/HasAndBelongsToMany:
 Rails/ShortI18n:
   Enabled: false
 
+RSpec/NamedSubject:
+  Enabled: false
+
 RSpec/Rails/InferredSpecType:
+  Enabled: false
+
+Style/AsciiComments:
   Enabled: false
 
 Style/BlockDelimiters:
