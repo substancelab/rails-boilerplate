@@ -16,7 +16,7 @@
 
 The following environment variables are expected to be configured by the environment, not via .env files:
 
-* `DOMAIN`: Domain name that the application is being served at.
+* `DOMAIN`: Domain name that the application is being served at. All requests for other domains will be redirected to this domain.
 * `EAGER_LOAD`: Set this to `"true"` to force eager loading in development.
 * `EMAIL_SENDER`: Email address to use as the from address when sending emails.
 * `PORT`: The port Puma listens on (defaults to `3000`).

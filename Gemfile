@@ -18,6 +18,7 @@ gem "postgresql"
 
 # App serving
 gem "puma"
+gem "rack-canonical-host"
 
 gem "rails-i18n"
 
