@@ -1,7 +1,6 @@
+if ! gem list procodile -i --silent; then
+  echo "Installing procodile..."
+  gem install procodile
+fi
 
-if [ -x "$(command -v procodile)" ]; then
-  procodile start --procfile=Procfile.dev --dev
-fi
-if [ -x "$(command -v foreman)" ]; then
-  foreman start --env=/dev/null --procfile=Procfile.dev
-fi
+procodile start --procfile=Procfile.dev --dev
