@@ -11,7 +11,7 @@ jobs:
   build:
     docker:
       # https://circleci.com/developer/images/image/cimg/ruby
-      - image: cimg/ruby:3.4.3-node
+      - image: cimg/ruby:3.4.4-node
         environment:
         - DATABASE_URL=postgres://ubuntu:@localhost:5432/circle_test
 
