@@ -250,6 +250,9 @@ GEM
     rubocop-ast (1.49.1)
       parser (>= 3.3.7.2)
       prism (~> 1.7)
+    rubocop-capybara (2.23.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.81)
     rubocop-performance (1.26.1)
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
@@ -260,10 +263,13 @@ GEM
       rack (>= 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.44.0, < 2.0)
-    rubocop-rails-omakase (1.1.0)
-      rubocop (>= 1.72)
-      rubocop-performance (>= 1.24)
-      rubocop-rails (>= 2.30)
+    rubocop-rspec (3.9.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.81)
+    rubocop-rspec_rails (2.32.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
+      rubocop-rspec (~> 3.5)
     ruby-progressbar (1.13.0)
     rubyzip (3.3.0)
     securerandom (0.4.1)
@@ -348,7 +354,12 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.4, >= 8.0.4.1)
-  rubocop-rails-omakase
+  rubocop
+  rubocop-capybara
+  rubocop-performance
+  rubocop-rails
+  rubocop-rspec
+  rubocop-rspec_rails
   selenium-webdriver
   solid_cable
   solid_cache
@@ -448,9 +459,11 @@ CHECKSUMS
   rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
   rubocop (1.86.2) sha256=bb2e97f635eda42c448f2588f4a6ff78f221b8bdfdf65b1e9b07fbd57521b45d
   rubocop-ast (1.49.1) sha256=4412f3ee70f6fe4546cc489548e0f6fcf76cafcfa80fa03af67098ffed755035
+  rubocop-capybara (2.23.0) sha256=f9ea1ba3a7561ee8e88cf76fc378ce517ce5327155f305ee7b5c2500e5aee357
   rubocop-performance (1.26.1) sha256=cd19b936ff196df85829d264b522fd4f98b6c89ad271fa52744a8c11b8f71834
   rubocop-rails (2.35.0) sha256=a5d9f0f6c6d9b73d9ddd181c4c0b6d2e00dd17107480828d31c7b369ebfcd49c
-  rubocop-rails-omakase (1.1.0) sha256=2af73ac8ee5852de2919abbd2618af9c15c19b512c4cfc1f9a5d3b6ef009109d
+  rubocop-rspec (3.9.0) sha256=8fa70a3619408237d789aeecfb9beef40576acc855173e60939d63332fdb55e2
+  rubocop-rspec_rails (2.32.0) sha256=4a0d641c72f6ebb957534f539d9d0a62c47abd8ce0d0aeee1ef4701e892a9100
   ruby-progressbar (1.13.0) sha256=80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33
   rubyzip (3.3.0) sha256=a372fc67892a4f8c0bc8ec906b720353d8e48807a64b2e63adf99b1e3583a034
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
