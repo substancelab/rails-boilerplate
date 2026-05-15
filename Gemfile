@@ -18,6 +18,9 @@ gem "turbo-rails"
 gem "stimulus-rails"
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
 gem "cssbundling-rails"
+# UI component library built with ViewComponents, Flowbite, and Tailwind CSS
+gem "flowbite-components"
+gem "tailwindcss-rails", ">= 4.3.0"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
