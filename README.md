@@ -1,24 +1,14 @@
-# README
+# Boilerplate
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A solid foundation for how we want to build Rails applications anno 2026.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* RSpec tests
+* View Components
+* Vite for Javascript assets
+* Stimulus for clientside interactions
+* Turbo for serverside interactions
+* Tailwind for styling
+* Flowbite as a UI kit via flowbite-components
+* Rubocop with Substance Lab Style
