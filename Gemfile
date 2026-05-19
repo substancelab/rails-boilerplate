@@ -16,8 +16,10 @@ gem "vite_rails"
 gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
+
 # UI component library built with ViewComponents, Flowbite, and Tailwind CSS
 gem "flowbite-components"
+gem "reactionview"
 gem "tailwindcss-rails", ">= 4.3.0"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]

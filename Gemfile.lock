@@ -152,6 +152,14 @@ GEM
     guard-rubocop (1.5.0)
       guard (~> 2.0)
       rubocop (< 2.0)
+    herb (0.10.1-aarch64-linux-gnu)
+    herb (0.10.1-aarch64-linux-musl)
+    herb (0.10.1-arm-linux-gnu)
+    herb (0.10.1-arm-linux-musl)
+    herb (0.10.1-arm64-darwin)
+    herb (0.10.1-x86_64-darwin)
+    herb (0.10.1-x86_64-linux-gnu)
+    herb (0.10.1-x86_64-linux-musl)
     http_parser.rb (0.8.1)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
@@ -293,6 +301,9 @@ GEM
       erb
       psych (>= 4.0.0)
       tsort
+    reactionview (0.3.0)
+      actionview (>= 7.0)
+      herb (>= 0.9.0, < 1.0.0)
     regexp_parser (2.12.0)
     reline (0.6.3)
       io-console (~> 0.5)
@@ -466,6 +477,7 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.4, >= 8.0.4.1)
+  reactionview
   rspec-rails
   rubocop
   rubocop-capybara
@@ -539,6 +551,14 @@ CHECKSUMS
   guard-livereload (2.5.2) sha256=124dd33cb08a232e5b46971b427c69ae34c4ff56fa72ac98f85eecb5da23a779
   guard-rspec (4.7.3) sha256=a47ba03cbd1e3c71e6ae8645cea97e203098a248aede507461a43e906e2f75ca
   guard-rubocop (1.5.0) sha256=3041d796dcb5ee31e352de74732250826f5f235b4ff48df9dbf424a6dc736251
+  herb (0.10.1-aarch64-linux-gnu) sha256=fd9f4f8e0bcd9a421de55ff8810066550e9bcba8c8bf53737b32a04eb2fcbc49
+  herb (0.10.1-aarch64-linux-musl) sha256=bc6dac577c25bb7b35fe812987a9da7056aabd3a9394941c2aadf68bcca7c58e
+  herb (0.10.1-arm-linux-gnu) sha256=965fcb7bb59c7307c2dfdb8fa03ae06724184886bcb015088585e5163036a425
+  herb (0.10.1-arm-linux-musl) sha256=d1c18bf017bccaf32e27439e74e53b3f24bc8056d0ef70e79568ac7f7b2e2728
+  herb (0.10.1-arm64-darwin) sha256=08d0434ae94d23a7353d767085dc974cc5e63943a07cd48bc99afd7fea919c1b
+  herb (0.10.1-x86_64-darwin) sha256=dc266814a63215eefb82cf4f55ce723bc20218395b13c1631c11ca7cfc782d07
+  herb (0.10.1-x86_64-linux-gnu) sha256=c7762d411a6d2e1a032cf403b0429155c01ab48b3b5be2a0aab1e921da6b8948
+  herb (0.10.1-x86_64-linux-musl) sha256=a5bb7c82bbc30a9eb80cb833fea749f543a0709d9f858f7db366a3c2616d969b
   http_parser.rb (0.8.1) sha256=9ae8df145b39aa5398b2f90090d651c67bd8e2ebfe4507c966579f641e11097a
   i18n (1.14.8) sha256=285778639134865c5e0f6269e0b818256017e8cde89993fdfcbfb64d088824a5
   io-console (0.8.2) sha256=d6e3ae7a7cc7574f4b8893b4fca2162e57a825b223a177b7afa236c5ef9814cc
@@ -601,6 +621,7 @@ CHECKSUMS
   rb-fsevent (0.11.2) sha256=43900b972e7301d6570f64b850a5aa67833ee7d87b458ee92805d56b7318aefe
   rb-inotify (0.11.1) sha256=a0a700441239b0ff18eb65e3866236cd78613d6b9f78fea1f9ac47a85e47be6e
   rdoc (7.2.0) sha256=8650f76cd4009c3b54955eb5d7e3a075c60a57276766ebf36f9085e8c9f23192
+  reactionview (0.3.0) sha256=3bd363863776827eaf85a9baf75370c1ca52a4b0dad87ba5d672e4abe76eb640
   regexp_parser (2.12.0) sha256=35a916a1d63190ab5c9009457136ae5f3c0c7512d60291d0d1378ba18ce08ebb
   reline (0.6.3) sha256=1198b04973565b36ec0f11542ab3f5cfeeec34823f4e54cebde90968092b1835
   rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
