@@ -1,0 +1,7 @@
+# Update application with most recent dependencies and changes
+#
+# This is expected to be run after pulling changes from the remote repository.
+
+set -e
+
+bin/setup --skip-server
