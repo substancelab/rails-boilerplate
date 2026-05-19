@@ -45,6 +45,7 @@ group :development, :test do
   gem "brakeman", :require => false
 
   gem "rspec-rails"
+  gem "shoulda-matchers"
 
   gem "rubocop", :require => false
   gem "rubocop-capybara", :require => false
