@@ -8,7 +8,10 @@ require_relative "../config/environment"
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 
+require "capybara/rspec"
 require "rspec/rails"
+require "view_component/test_helpers"
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -30,6 +33,9 @@ rescue ActiveRecord::PendingMigrationError => error
   abort error.to_s.strip
 end
 RSpec.configure do |config|
+  config.include Capybara::RSpecMatchers, :type => :component
+  config.include ViewComponent::TestHelpers, :type => :component
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_paths = [
     Rails.root.join("spec/fixtures"),
