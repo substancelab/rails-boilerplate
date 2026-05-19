@@ -29,7 +29,9 @@
       <%= render "layouts/navigation/primary" %>
 
       <nav class="w-64 h-full p-4 transition-transform border-e border-default">
-        Secondary nav
+        <%= render(UI::NavigationItem.new(:href => "/somewhere")) do |item| %>
+          <% item.with_label { "Secondary nav" } %>
+        <% end %>
         <!-- TODO: This might not always be there -->
       </nav>
 
