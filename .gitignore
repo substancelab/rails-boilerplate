@@ -37,3 +37,7 @@
 !/app/assets/builds/.keep
 
 /node_modules
+
+# Test artifacts
+/spec/persistence.txt
+>>>>>>> b0d1f48 (Configure RSpec to our liking)
