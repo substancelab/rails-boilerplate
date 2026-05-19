@@ -58,6 +58,13 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+
+  # Run stuff automatically
+  gem "guard"
+  gem "guard-livereload"
+  gem "guard-rspec"
+  gem "guard-rubocop"
+  gem "ostruct" # required by one of the guard gems
 end
 
 group :test do
