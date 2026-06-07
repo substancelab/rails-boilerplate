@@ -1,2 +1,0 @@
-yarn prettier --write app/**/*.js config/**/*.js
-rubocop -a
