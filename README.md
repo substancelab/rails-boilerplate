@@ -1,5 +1,20 @@
 # Substance Lab Rails Application Boilerplate
 
+A solid foundation for how we want to build Rails applications anno 2026.
+
+## Features
+
+* RSpec tests
+* View Components
+* Vite for Javascript assets
+* Stimulus for clientside interactions
+* Turbo for serverside interactions
+* Tailwind for styling
+* Flowbite as a UI kit via flowbite-components
+* Rubocop with Substance Lab Style
+* Solid Queue for background jobs
+>>>>>>> fc5ff803c697ff3acd4ca1bec4df1a2aa733ac09
+
 ## How to use this repository?
 
 1. `cd path/to/where/you/want/the/new/app`
@@ -9,9 +24,8 @@
 5. `rm -rf .git .circleci`
 6. Replace all occurrences of "Boilerplate" with YourAppName": `find . -type f -print0 | xargs -0 sed -i '' 's/Boilerplate/YourAppName/g'`
 7. Replace all occurrences of "boilerplate" with "your_app_name": `find . -type f -print0 | xargs -0 sed -i '' 's/boilerplate/your_app_name/g'`
-8. If you don't need users in the project, remove Devise: `script/boilerplate/remove_devise`
-9. `mv README_APP.md README.md`
-10. `rm -rf script/boilerplate`
+8. `mv README_APP.md README.md`
+9. `rm -rf script/boilerplate`
 
 ... and you're off to the races.
 

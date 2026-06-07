@@ -1,0 +1,6 @@
+if ! gem list procodile -i --silent; then
+  echo "Installing procodile..."
+  gem install procodile
+fi
+
+procodile start --procfile=Procfile.dev --dev

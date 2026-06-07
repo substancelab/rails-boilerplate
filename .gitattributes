@@ -6,5 +6,9 @@ db/schema.rb linguist-generated
 # Mark the yarn lockfile as having been generated.
 yarn.lock linguist-generated
 
-# Mark any vendored files as having been vendored.
+# Mark any vendored files as having been generated.
 vendor/* linguist-vendored
+
+# Mark the credentials as having been generated.
+config/credentials/*.yml.enc diff=rails_credentials
+config/credentials.yml.enc diff=rails_credentials

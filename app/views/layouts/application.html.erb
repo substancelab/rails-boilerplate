@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>" class="h-full">
+  <head>
+    <title><%= content_for(:title) || "Outbox" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+    <%= vite_client_tag %>
+    <%= vite_javascript_tag 'application' %>
+
+  </head>
+
+  <body class="h-full bg-neutral-secondary">
+    <div class="flex h-full @container">
+      <%= render "layouts/navigation/primary" %>
+
+      <nav class="w-64 h-full p-4 transition-transform border-e border-default">
+        <%= render(UI::NavigationItem.new(:href => "/somewhere")) do |item| %>
+          <% item.with_label { "Secondary nav" } %>
+        <% end %>
+        <!-- TODO: This might not always be there -->
+      </nav>
+
+      <main class="p-4">
+        <%= yield %>
+      </main>
+    </div>
+  </body>
+</html>

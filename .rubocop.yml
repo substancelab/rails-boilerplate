@@ -1,4 +1,6 @@
-require:
+plugins:
+  - 'rubocop-capybara'
+  - 'rubocop-factory_bot'
   - 'rubocop-performance'
   - 'rubocop-rails'
   - 'rubocop-rspec'
@@ -14,6 +16,7 @@ AllCops:
     - 'config/puma.rb'
     - 'db/migrate/*.active_storage.rb'
     - 'db/schema.rb'
+    - 'db/*_schema.rb'
     - 'lib/templates/**/*.rb'
     - 'node_modules/**/*'
     - 'vendor/**/*'
