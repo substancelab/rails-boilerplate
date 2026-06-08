@@ -81,6 +81,7 @@ jobs:
       - name: Install Node modules
         run: yarn install --frozen-lockfile
 
+      # Ensure we have a db/schema.rb even if it the database is empty.
       - name: Migrate database
         run: bin/rails db:migrate
 
@@ -111,6 +112,10 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+
+      # Ensure we have a db/schema.rb even if it the database is empty.
+      - name: Migrate database
+        run: bin/rails db:migrate
 
       - name: Run System Tests
         env:
