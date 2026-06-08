@@ -113,6 +113,16 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'yarn'
+          cache-dependency-path: yarn.lock
+
+      - name: Install Node modules
+        run: yarn install --frozen-lockfile
+
       # Ensure we have a db/schema.rb even if it the database is empty.
       - name: Migrate database
         run: bin/rails db:migrate
