@@ -1,5 +1,5 @@
 {
-  "name": "Outbox",
+  "name": <%= Rails.application.class.module_parent_name.to_json %>,
   "icons": [
     {
       "src": "/icon.png",
@@ -16,7 +16,7 @@
   "start_url": "/",
   "display": "standalone",
   "scope": "/",
-  "description": "Outbox.",
+  "description": "Boilerplate.",
   "theme_color": "red",
   "background_color": "red"
 }
