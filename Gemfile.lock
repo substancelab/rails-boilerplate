@@ -181,7 +181,7 @@ GEM
     http_parser.rb (0.8.1)
     i18n (1.15.2)
       concurrent-ruby (~> 1.0)
-    io-console (0.9.4)
+    io-console (0.9.5)
     irb (1.18.0)
       pp (>= 0.6.0)
       prism (>= 1.3.0)
@@ -252,7 +252,7 @@ GEM
       racc
     pp (0.6.4)
       prettyprint
-    prettyprint (0.2.0)
+    prettyprint (0.2.1)
     prism (1.9.0)
     propshaft (1.3.2)
       actionpack (>= 7.0.0)
@@ -273,7 +273,7 @@ GEM
     rack-session (2.1.2)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
-    rack-test (2.2.0)
+    rack-test (2.3.0)
       rack (>= 1.3)
     rackup (2.3.1)
       rack (>= 3)
@@ -430,16 +430,16 @@ GEM
       ulid (~> 1.0)
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
-    tailwindcss-rails (4.6.0)
+    tailwindcss-rails (4.7.0)
       railties (>= 7.0.0)
       tailwindcss-ruby (~> 4.0)
-    tailwindcss-ruby (4.3.1)
-    tailwindcss-ruby (4.3.1-aarch64-linux-gnu)
-    tailwindcss-ruby (4.3.1-aarch64-linux-musl)
-    tailwindcss-ruby (4.3.1-arm64-darwin)
-    tailwindcss-ruby (4.3.1-x86_64-darwin)
-    tailwindcss-ruby (4.3.1-x86_64-linux-gnu)
-    tailwindcss-ruby (4.3.1-x86_64-linux-musl)
+    tailwindcss-ruby (4.3.3)
+    tailwindcss-ruby (4.3.3-aarch64-linux-gnu)
+    tailwindcss-ruby (4.3.3-aarch64-linux-musl)
+    tailwindcss-ruby (4.3.3-arm64-darwin)
+    tailwindcss-ruby (4.3.3-x86_64-darwin)
+    tailwindcss-ruby (4.3.3-x86_64-linux-gnu)
+    tailwindcss-ruby (4.3.3-x86_64-linux-musl)
     thor (1.5.0)
     timeout (0.6.1)
     tsort (0.2.0)
@@ -606,7 +606,7 @@ CHECKSUMS
   herb (0.11.0-x86_64-linux-musl) sha256=e27a08fe72304c8043e851b568ed30eaa45f06b5333d151939a7834e936c01aa
   http_parser.rb (0.8.1) sha256=9ae8df145b39aa5398b2f90090d651c67bd8e2ebfe4507c966579f641e11097a
   i18n (1.15.2) sha256=00f9eb62412fe593b2a65a97daa75300d37abb8f7202ec748e94b6d46a9dd1b5
-  io-console (0.9.4) sha256=a403304f32928ee85e56d457b4612ca43f2703b561a3258844992bd24085fbb1
+  io-console (0.9.5) sha256=83dd9bbf4c4680416629245b39cd4212eb5f4d9a4ea91804870c1f6b846414d5
   irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
   json (3.1.0) sha256=3ce7ccf8fde58960177a3a756c31f292a4c1e1dedee884547096a5b0604e3bd8
   language_server-protocol (3.17.0.6) sha256=5ef2c0c138f8267e1bc631d3328347d354f96724b0af22f2c79516120443b7f0
@@ -643,7 +643,7 @@ CHECKSUMS
   parallel (2.3.0) sha256=f75a3e904101ce6a1ccb6b8dc800cbafd42166d83330192438dcf29395167a6f
   parser (3.3.12.0) sha256=21a6d7f755d5a24dfbdc6e6b772e4e879a52e7631a88bc5a3a134606052c9828
   pp (0.6.4) sha256=dfcb0fce700c41456265922884f9fe195d7fbb0674a3578e6c0f69588e82b570
-  prettyprint (0.2.0) sha256=2bc9e15581a94742064a3cc8b0fb9d45aae3d03a1baa6ef80922627a0766f193
+  prettyprint (0.2.1) sha256=d555d57ea6d7cf001d4774b693546a6bd88bec1e778ddffb5c60b68ceec4b7d4
   prism (1.9.0) sha256=7b530c6a9f92c24300014919c9dcbc055bf4cdf51ec30aed099b06cd6674ef85
   propshaft (1.3.2) sha256=1d56a3e56a92c21bfc29caf07406b5386b00d4c47ddf357cf989a5a234b1389e
   pry (0.16.0) sha256=d76c69065698ed1f85e717bd33d7942c38a50868f6b0673c636192b3d1b6054e
@@ -654,7 +654,7 @@ CHECKSUMS
   rack (3.2.8) sha256=1fecc85e463ebc7a2a945fff829ffcd549babeb1556384796fad946c28dc4ec7
   rack-proxy (2.0.1) sha256=e7afa56a48728c22ded1b7c435210918d7b07bdbc61ca8f9fd687c48951ae274
   rack-session (2.1.2) sha256=595434f8c0c3473ae7d7ac56ecda6cc6dfd9d37c0b2b5255330aa1576967ffe8
-  rack-test (2.2.0) sha256=005a36692c306ac0b4a9350355ee080fd09ddef1148a5f8b2ac636c720f5c463
+  rack-test (2.3.0) sha256=b118d177cc002c572fc1b6fd8d19c9ed5881a36e8d6f689f9e618f9f861241e8
   rackup (2.3.1) sha256=6c79c26753778e90983761d677a48937ee3192b3ffef6bc963c0950f94688868
   rails (8.1.4) sha256=5f3ecdf9a2a3b79b2e31b8fee3b64a00f7284d76e5631f87d0e58e665911a33b
   rails-dom-testing (2.3.0) sha256=8acc7953a7b911ca44588bf08737bc16719f431a1cc3091a292bca7317925c1d
@@ -702,14 +702,14 @@ CHECKSUMS
   sqlite3 (2.10.2-x86_64-linux-musl) sha256=b9f8fc62f3e0eb8966b41de251b492b4c8e9d1b23559beb6e150ad7f8d590941
   sqlite_crypto (2.3.0) sha256=d002a3ee418e5042706d3ee40b24920f0ba432757a289b81a01d950d95993409
   stimulus-rails (1.3.4) sha256=765676ffa1f33af64ce026d26b48e8ffb2e0b94e0f50e9119e11d6107d67cb06
-  tailwindcss-rails (4.6.0) sha256=d99512867173d55c5ef8890427682299d8539f550cec1408b3d8667a538bd365
-  tailwindcss-ruby (4.3.1) sha256=ced3198e057da98f21cb281f4821ac8882a2899047066895ba181caf312620c1
-  tailwindcss-ruby (4.3.1-aarch64-linux-gnu) sha256=b42af5fdb7ade3f3f70cda217c288986cc6b773601437b8deb80ea229a96680c
-  tailwindcss-ruby (4.3.1-aarch64-linux-musl) sha256=2854eec6704d5773346d44cf884944e1f90b1b195327e9cfa207cba614c024ab
-  tailwindcss-ruby (4.3.1-arm64-darwin) sha256=477ef19dde7fa4db32a0f916c02398e5fcc6af7f18d5e773012d93d6b96ecfa3
-  tailwindcss-ruby (4.3.1-x86_64-darwin) sha256=6443a552bc00581dd8513fc42212b80ea16329f4f89e47a27835edd7bf95888b
-  tailwindcss-ruby (4.3.1-x86_64-linux-gnu) sha256=22a208da614b7767cee504ab9dae2ab0d8299fdf633c045c6f8357de81d0506f
-  tailwindcss-ruby (4.3.1-x86_64-linux-musl) sha256=1adcb5df5f9a6a85a81dc9e5102ce7e4f7a1415f477f1a6b22b52ee49c351ee6
+  tailwindcss-rails (4.7.0) sha256=9b09bd677d7cd226fc8ff3f7d2d91c6dc6c3da75dd74dc4cab5f94711f69ba41
+  tailwindcss-ruby (4.3.3) sha256=ee0a64030749862deb501acab4c4aaf5adbee13865746a33299d46d7b5d0952a
+  tailwindcss-ruby (4.3.3-aarch64-linux-gnu) sha256=c86d6dd3eccc85fe0d792a832b06f2bf3c0a7a83b399308aeb9d8f5725f42a6a
+  tailwindcss-ruby (4.3.3-aarch64-linux-musl) sha256=72b77ca9edea82383dd09510ab520a122e3cb9f9864ca5b38e27698098d2b899
+  tailwindcss-ruby (4.3.3-arm64-darwin) sha256=776c51fc734aac64bde0c253eadd2ed2e610b2ba0d8e760501fe7cbec55fd6cf
+  tailwindcss-ruby (4.3.3-x86_64-darwin) sha256=483011e5d3792cf5ef4afdfb04c1d95daccf42c30cdb6fe53b77520954e7b922
+  tailwindcss-ruby (4.3.3-x86_64-linux-gnu) sha256=2337017ff8b02698480eae1e9637cf01faa0e4824db89d067a13c5a5ee38c9b2
+  tailwindcss-ruby (4.3.3-x86_64-linux-musl) sha256=27d478c417bcf73828e5b544744c5bdfd5b5cb54f1a266fc4f185281c32efe6c
   thor (1.5.0) sha256=e3a9e55fe857e44859ce104a84675ab6e8cd59c650a49106a05f55f136425e73
   timeout (0.6.1) sha256=78f57368a7e7bbadec56971f78a3f5ecbcfb59b7fcbb0a3ed6ddc08a5094accb
   tsort (0.2.0) sha256=9650a793f6859a43b6641671278f79cfead60ac714148aabe4e3f0060480089f
